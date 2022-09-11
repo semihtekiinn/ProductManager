@@ -9,7 +9,6 @@ import javax.validation.constraints.Min;
 @Entity
 @Data
 public class Product {
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -22,6 +21,4 @@ public class Product {
     @Min(message = "The price must be min 10!", value = 10)
     @Column(nullable = false)
     private double price;
-
-
 }
